@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+      html, body {
+        font-family: 'Nunito', sans-serif;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        font-size: 4rem;
+        margin: unset;
+      }
+    </style>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+    <!--$-->
+    <title>Atul Codelab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--/-->
+    <script src="app.client.dart.js" defer></script>
+    <style>
+      ol {
+        max-width: 500px;
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .main section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--@app-->
+    <div class="main">
+      <homsepage>
+        <div class="h-96 lg:h-screen bg-gradient-to-t from-indigo-200 to-white-500 relative overflow-hidden">
+          <nav class="w-full fixed top-0 bg-white z-10">
+            <div class="container mx-auto py-5 flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <img class="w-8" src="/images/logo.png"/>
+                <span class="text-2xl font-bold text-indigo-900">Atul&#39;s CodeLab</span>
+              </div>
+              <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                <li class="hover:text-gray-500"><a href="#">Home Page</a></li>
+                <li class="hover:text-gray-500"><a href="#about">About me</a></li>
+                <li class="hover:text-gray-500"><a href="#services">Services</a></li>
+                <li class="hover:text-gray-500"><a href="#works">Works</a></li>
+                <li class="hover:text-gray-500"><a href="#contact">Contact</a></li>
+              </ul>
+              <img class="hidden md-block w-5 cursor-pointer " src="/images/moon.png"/>
+              <div>
+                <div class="space-y-1 md:hidden cursor-pointer">
+                  <div class="w-6 h-0.5 bg-black"></div>
+                  <div class="w-6 h-0.5 bg-black"></div>
+                  <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <intro>
+            <img class="absolute bottom-0 right-0 h-5/6 object-cover lg:left-0 mx-auto" alt="Man" src="/images/man.png"/>
+            <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
+            <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold  "><span class="text-gray-600">Freelance</span><p id="text" class="text-red-500 ">Developer</p></div>
+            <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3">
+              <h1 class="text-4xl font-bold text-indigo-900">Hi, I&#39;m Atul Maurya</h1>
+              <p class="text-gray-400">
+                I am a freelance Flutter developer based in India, specializing in building responsive, high-performance mobile and web applications. With expertise in Flutter, Dart, and cross-platform development, I create user-friendly apps that work seamlessly across iOS, Android, and the web.
+              </p>
+              <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Hire me</a>
+            </div>
+          </intro>
+        </div>
+        <div id="about" class="px-10 dark:bg-slate-900 ">
+          <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+            <div class="relative">
+              <img class="h-1/4 absolute top-0 left-0 -z-10" alt src="/images/dots.png"/>
+              <div class="h-full rounded-full overflow-hidden"><img class="h-full w-full object-cover" alt src="/images/portrait.png"/></div>
+            </div>
+            <div class="my-auto flex flex-col gap-3">
+              <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+              <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+              <h1 class="text-3xl font-medium dark:text-white">Better Experience</h1>
+              <p class="text-gray-400">
+                I&#39;m a Flutter developer and multi-disciplinary creator with over 10 years of experience designing and building seamless digital products. Combining expertise in Flutter with a strong foundation in various design disciplines, I bring a unique, user-centered approach to crafting engaging and high-performance apps.
+              </p>
+              <div>
+                <h2 class="text-gray-400 font-medium">Flutter</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">Dart</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">Java</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">C</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">Kotlin</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">Riverpod</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">BLoC</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">Getx</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">Git</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">CI&#47;CD</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+              <div>
+                <h2 class="text-gray-400 font-medium">Firebase</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md"><div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="services" class="dark:bg-slate-900">
+          <div class="container mx-auto">
+            <div class="flex flex-col gap-3 items-center">
+              <h1 class="text-indigo-600 font-bold">SERVICES</h1>
+              <h1 class="text-3xl dark:text-white">What do I offer?</h1>
+              <p class="w-1/2 text-center text-gray-400">
+                My approach to hybrid app and web development is to create versatile, high-performing solutions that strengthen your brand and provide an intuitive, seamless experience across platforms for your audience.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 sm:p-0 flex  flex-wrap  justify-center ml-5 gap-x-5 ">
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-2  flex flex-col gap-3 cursor-pointer   hover:bg-green-200 transition duration-300 ease-in-out ">
+              <img class="w-10" alt src="./img/icon.png"/>
+              <h1 class="font-medium text-lg dark:text-white">Custom Mobile App Development</h1>
+              <p class="text-gray-400">
+                Building tailored, cross-platform mobile apps with Flutter, ensuring a smooth user experience on both iOS and Android.
+              </p>
+            </div>
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-2  flex flex-col gap-3 cursor-pointer   hover:bg-green-200 transition duration-300 ease-in-out ">
+              <img class="w-10" alt src="./img/icon.png"/>
+              <h1 class="font-medium text-lg dark:text-white">Custom Web App Development</h1>
+              <p class="text-gray-400">
+                Developing scalable, responsive web applications using Flutter Web, delivering a seamless experience on all modern browsers.
+              </p>
+            </div>
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-2  flex flex-col gap-3 cursor-pointer   hover:bg-green-200 transition duration-300 ease-in-out ">
+              <img class="w-10" alt src="./img/icon.png"/>
+              <h1 class="font-medium text-lg dark:text-white">UI&#47;UX Design</h1>
+              <p class="text-gray-400">Crafting intuitive, visually engaging interfaces that prioritize user needs and enhance usability.</p>
+            </div>
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-2  flex flex-col gap-3 cursor-pointer   hover:bg-green-200 transition duration-300 ease-in-out ">
+              <img class="w-10" alt src="./img/icon.png"/>
+              <h1 class="font-medium text-lg dark:text-white">State Management &amp; Architecture</h1>
+              <p class="text-gray-400">
+                Implementing scalable architectures and effective state management using Riverpod, BLoC, and Provider.
+              </p>
+            </div>
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-2  flex flex-col gap-3 cursor-pointer   hover:bg-green-200 transition duration-300 ease-in-out ">
+              <img class="w-10" alt src="./img/icon.png"/>
+              <h1 class="font-medium text-lg dark:text-white">Backend Integration</h1>
+              <p class="text-gray-400">
+                Integrating with RESTful APIs, Firebase, and other backend services for real-time data updates and a seamless experience.
+              </p>
+            </div>
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-2  flex flex-col gap-3 cursor-pointer   hover:bg-green-200 transition duration-300 ease-in-out ">
+              <img class="w-10" alt src="./img/icon.png"/>
+              <h1 class="font-medium text-lg dark:text-white">App Maintenance &amp; Support</h1>
+              <p class="text-gray-400">
+                Providing ongoing maintenance, optimization, and support to keep your app updated, secure, and performing at its best.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="works">
+          <div class="container mx-auto py-40 dark:bg-slate-900">
+            <div class="flex flex-col gap-3 items-center">
+              <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
+              <h1 class="text-3xl dark:text-white">Works &amp; Projects</h1>
+              <p class="w-1/2 text-center text-gray-400">
+                I help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and coffee, I turn your requirements into well-designed websites.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 sm:p-0 flex flex-wrap  gap-5 justify-center">
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 ARVRA</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Fitness app</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, Node.js]</div>
+              <div class="text-sm mt-2 text-gray-600">
+                📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration, In-app subscription]
+              </div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.gs.wellness">📱 Play Store</a>
+                <a class="bg-black text-white px-4 py-2 rounded-full mt-4 inline-block ml-2 transform hover:scale-105 transition-all duration-200" href="https://apps.apple.com/in/app/arvra/id6443480466">🍏 App Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 Golfers</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Betting based on golf games</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, Node.js]</div>
+              <div class="text-sm mt-2 text-gray-600">
+                📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration, Stripe Implementation for subscription, Viva wallet integration, Map Integration]
+              </div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.golfers">📱 Play Store</a>
+                <a class="bg-black text-white px-4 py-2 rounded-full mt-4 inline-block ml-2 transform hover:scale-105 transition-all duration-200" href="https://apps.apple.com/in/app/the-golfers-app/id6467631970">🍏 App Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 AdRent</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Utility based</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, Node.js]</div>
+              <div class="text-sm mt-2 text-gray-600">
+                📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration, Stripe Implementation for subscription]
+              </div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.app.adrent">📱 Play Store</a>
+                <a class="bg-black text-white px-4 py-2 rounded-full mt-4 inline-block ml-2 transform hover:scale-105 transition-all duration-200" href="https://apps.apple.com/in/app/6478952824">🍏 App Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 Ample Solar</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Utilities</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, Node.js]</div>
+              <div class="text-sm mt-2 text-gray-600">📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration]</div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.app.ample">📱 Play Store</a>
+                <a class="bg-black text-white px-4 py-2 rounded-full mt-4 inline-block ml-2 transform hover:scale-105 transition-all duration-200" href="https://apps.apple.com/in/app/ample-solar/id6476863662">🍏 App Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 Vibrant</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Service based</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, PHP]</div>
+              <div class="text-sm mt-2 text-gray-600">
+                📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration, Stripe Implementation, Map Integration]
+              </div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.app.vibrant">📱 Play Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 Atlas Copco</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Utility based</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, PHP]</div>
+              <div class="text-sm mt-2 text-gray-600">📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration]</div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.atlascopco.unityspr">📱 Play Store</a>
+                <a class="bg-black text-white px-4 py-2 rounded-full mt-4 inline-block ml-2 transform hover:scale-105 transition-all duration-200" href="https://apps.apple.com/in/app/unity-spr/id1641707057">🍏 App Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 APC</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Educational</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, Node.js]</div>
+              <div class="text-sm mt-2 text-gray-600">📝 [UI Design, API Integration, Firebase Integration]</div>
+              <div class="mt-4"></div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 JobSub</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Job finder</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, Node.js]</div>
+              <div class="text-sm mt-2 text-gray-600">
+                📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration, Stripe Implementation, Map Integration]
+              </div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.app.JobSub">📱 Play Store</a>
+                <a class="bg-black text-white px-4 py-2 rounded-full mt-4 inline-block ml-2 transform hover:scale-105 transition-all duration-200" href="https://apps.apple.com/in/app/jobsub/id1585927640">🍏 App Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 Capsico</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Food Delivery app</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Android, PHP]</div>
+              <div class="text-sm mt-2 text-gray-600">📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration]</div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=emergence.infotech.thecapsico">📱 Play Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 Ankuran</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Educational App</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Android, PHP]</div>
+              <div class="text-sm mt-2 text-gray-600">📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration]</div>
+              <div class="mt-4">
+                <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block transform hover:scale-105 transition-all duration-200" href="https://play.google.com/store/apps/details?id=com.pahal.ankuranapp">📱 Play Store</a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-1/5 shadow-lg my-3 md:my-10 m-1 transition-all hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg ">
+              <img class="w-full h-40 object-cover rounded-lg transition-transform transform hover:scale-105" src="/images/item.png"/>
+              <div class="text-2xl font-semibold mt-4 text-gray-900 hover:text-blue-500 transition-colors duration-300">🔥 Kush Gods</div>
+              <div class="text-sm mt-2 text-gray-700 bg-gray-100 rounded-lg p-2 inline-block">📱 Ecommerce app</div>
+              <div class="text-sm mt-2 text-gray-700 bg-blue-100 rounded-lg p-2 inline-block">💻 [Flutter, PHP]</div>
+              <div class="text-sm mt-2 text-gray-600">📝 [UI Design, API Integration, Third-party API Integration, Firebase Integration]</div>
+              <div class="mt-4"></div>
+            </div>
+          </div>
+        </div>
+        <div id="contact">
+          <div class="container mx-auto dark:bg-slate-900">
+            <div class="flex flex-col gap-3 items-center">
+              <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+              <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+              <p class="w-1/2 text-center text-gray-400">Do you have an idea? Let&#39;s discuss it and see what we can do together.</p>
+            </div>
+          </div>
+          <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+            <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white" placeholder="Name Surname" type="text"/>
+            <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white" placeholder="Email" type="email"/>
+            <textarea class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white" cols="30" placeholder="Message..." rows="10"></textarea>
+            <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer">Submit</button>
+          </form>
+        </div>
+        <div class="w-full bg-gray-800">
+          <div class="container mx-auto py-5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img class="w-8" alt src="/images/logo.png"/>
+                <span class="text-2xl font-bold text-white">Atul&#39;s CodeLab</span>
+              </div>
+              <span class="hidden md:block font-medium text-white">© 2024 @ by Atul maurya</span>
+            </div>
+            <div class="flex gap-2">
+              <img class="w-4 cursor-pointer" alt src="./img/facebook.png"/>
+              <img class="w-4 cursor-pointer" alt src="./img/instagram.png"/>
+              <img class="w-4 cursor-pointer" alt src="./img/twitter.png"/>
+              <img class="w-4 cursor-pointer" alt src="./img/linkedin.png"/>
+            </div>
+          </div>
+        </div>
+      </homsepage>
+    </div>
+    <!--/@app-->
+  </body>
+</html>

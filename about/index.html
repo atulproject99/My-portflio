@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+      html, body {
+        font-family: 'Nunito', sans-serif;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        font-size: 4rem;
+        margin: unset;
+      }
+    </style>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+    <!--$-->
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--/-->
+    <script src="app.client.dart.js" defer></script>
+    <style>
+      ol {
+        max-width: 500px;
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .main section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--@app-->
+    <div class="main">
+      <section>
+        <ol>
+          <li>
+            <h3>📖 Documentation</h3>
+            Jaspr&#39;s 
+            <a href="https://docs.page/schultek/jaspr">official documentation</a>
+             provides you with all information you need to get started.
+          </li>
+          <li>
+            <h3>💬 Community</h3>
+            Got stuck? Ask your question on the official 
+            <a href="https://docs.page/schultek/jaspr">Discord server</a>
+             for the Jaspr community.
+          </li>
+          <li>
+            <h3>📦 Ecosystem</h3>
+            Get official packages and integrations for your project like jaspr_router, jaspr_tailwind or jaspr_riverpod. Find packages built for Jaspr on pub.dev using the 
+            <a href="https://pub.dev/packages?q=topic%3Ajaspr">#jaspr</a>
+             topic, or publish your own.
+          </li>
+          <li>
+            <h3>💙 Support Jaspr</h3>
+            If you like Jaspr, consider starring us on 
+            <a href="https://github.com/schultek/jaspr">Github</a>
+             and tell your friends.
+          </li>
+        </ol>
+      </section>
+    </div>
+    <!--/@app-->
+  </body>
+</html>
